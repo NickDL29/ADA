@@ -40,7 +40,20 @@ int MatrixChainOrder(int p[], int n)
 
 int main()
 {
-	int arr[] = { 1, 2, 3, 4 };
+	int n,i;
+  //clrscr();
+  printf("Enter the number of elements in the Array: ");
+  scanf("%d",&n);
+  int arr[n];
+  printf("\nEnter %d elements:\n\n",n);
+
+  for(i=0 ; i<n ; i++)
+  {
+   printf(" Array[%d] = ",i);
+   scanf("%d",&arr[i]);
+  }
+
+	// int arr[] = { 1, 2, 3, 4 };
 	int size = sizeof(arr) / sizeof(arr[0]);
 
 	printf("Minimum number of multiplications is %d ",
