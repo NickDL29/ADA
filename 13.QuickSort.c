@@ -65,9 +65,19 @@ void printArray(int array[], int size) {
 
 // main function
 int main() {
-  int data[] = {8, 7, 2, 1, 0, 9, 6};
-  
-  int n = sizeof(data) / sizeof(data[0]);
+
+  int n,i;
+
+  printf("Enter the number of elements in the Array: ");
+  scanf("%d",&n);
+  int data[n];
+  printf("\nEnter %d elements:\n\n",n);
+
+  for(i=0 ; i<n ; i++)
+  {
+   printf(" Array[%d] = ",i);
+   scanf("%d",&data[i]);
+  }
   
   printf("Unsorted Array\n");
   printArray(data, n);
@@ -78,3 +88,4 @@ int main() {
   printf("Sorted array in ascending order: \n");
   printArray(data, n);
 }
+
