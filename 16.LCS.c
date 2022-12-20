@@ -4,9 +4,9 @@
 #include <string.h>
 
 int i, j, m, n, LCS_table[20][20];
-char S1[20] = "ASDFGH", S2[20] = "ZXDFGH", b[20][20];
 
-void lcsAlgo() {
+
+void lcsAlgo(char S1[], char S2[]) {
   m = strlen(S1);
   n = strlen(S2);
 
@@ -53,6 +53,17 @@ void lcsAlgo() {
 }
 
 int main() {
-  lcsAlgo();
+
+  char b[20][20];
+
+  
+  char S1[20];
+  printf("Enter the Word 1: ");
+    scanf(" %s", &S1);
+  char S2[20];
+  printf("Enter the Word 2: ");
+    scanf(" %s", &S2);
+
+  lcsAlgo(S1,S2);
   printf("\n");
 }
